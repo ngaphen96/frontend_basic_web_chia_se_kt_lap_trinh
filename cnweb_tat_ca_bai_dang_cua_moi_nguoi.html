@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nền tảng chia sẻ kiến thức cho sinh viên</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+      position: fixed;
+      right: 0px;
+      background: hsla(80, 90%, 40%, 0.7);/*độ nét của màu sắc, và độ mờ*/
+      
+   
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">CN WEB</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Trang chủ</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Thắng con
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li ><a href="#">Trang cá nhân</a></li>
+                  <li ><a href="#">Viết bài</a></li>
+                  <li><a href="#">Đăng xuất</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+<div class="container">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Thắng Con</h4>
+      <img src="image/a6.jpg" class="img-circle" height="300" width="300" alt="Avatar">
+      <br/>
+       <br/>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Trang chủ</a></li>
+        <li><a href="#section2">Trang cá nhân</a></li>
+        <li><a href="#section3">Viết bài</a></li>
+        
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-8">
+
+      <div style="height: 100%;" >
+        <h2>Bài Đăng 1</h2>
+        <h5><span class="glyphicon glyphicon-time"></span> Đăng bởi Nga Phèn, Sep 27, 2015.</h5>
+        <h5><span><span>12<span class="label label-danger">Like</span></span> &nbsp; &nbsp;<span>3 <span class="label label-primary">Coment</span></span></span></h5><br>
+        <p>Hệ thống quản lý việc tìm kiếm, đánh giá của khách hàng (người dùng) và phản hồi của nhà hàng dưới dạng các thông báo và cập nhật thông tin. Việc tìm kiếm của hệ thống tập trung vào khu vực cụ thể thay vì tỉnh thành, cho phép người dùng tìm kiếm trong 1 phạm vi địa lý. Điều này giúp người dùng dễ dàng lên kế hoạch, chọn các nhà hàng gần và tiện lợi nhất. Hệ thống không hỗ trợ thanh toán hay đặt chỗ giữa khách hàng và nhà hàng, nhưng có thể mở rộng trong tương lai.</p>
+        <a href="#">... Xem thêm</a>
+        <br><br>
+        <div>
+            <button style="color : red">Like</button>
+            <h6>Comment:</h6>
+            <form role="form">
+              <div class="form-group">
+                <textarea class="form-control" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            <br><br>
+            
+            <p><span class="badge">3</span> Comments:</p><br>
+            
+            <div class="row">
+
+                  <div class="col-sm-2 text-center">
+                    <img src="image/a6.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                  </div>
+                  <div class="col-sm-10">
+                    <h4>Anh Tuấn <small>Sep 29, 2015, 9:12 PM</small></h4>
+                    <p>Tuyệt vời :))</p>
+                    <br>
+                  </div>
+
+                  <div class="col-sm-2 text-center">
+                    <img src="image/a6.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                  </div>
+                  <div class="col-sm-10">
+                    <h4>Anh Quách <small>Sep 25, 2015, 8:25 PM</small></h4>
+                    <p>Hay quá</p>
+                    <br>
+                  </div>
+
+                  <div class="col-sm-2 text-center">
+                    <img src="image/a6.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                  </div>
+                  <div class="col-sm-10">
+                    <h4>Anh Tuấn <small>Sep 29, 2015, 9:12 PM</small></h4>
+                    <p>Tuyệt vời lần 2 :))</p>
+                    <br>
+                  </div>
+           </div>
+         </div>
+      </div>
+      
+      <div style="height: 100%;">
+        
+        <hr>
+        <h2>Bài Đăng 2</h2>
+        <h5><span class="glyphicon glyphicon-time"></span> Đăng bởi Anh Quách II, Sep 24, 2015.</h5>
+        <h5><span><span>12<span class="label label-danger">Like</span></span> &nbsp; &nbsp;<span>2 <span class="label label-primary">Coment</span></span></span></h5><br>
+        <p>Hệ thống quản lý việc tìm kiếm, đánh giá của khách hàng (người dùng) và phản hồi của nhà hàng dưới dạng các thông báo và cập nhật thông tin. Việc tìm kiếm của hệ thống tập trung vào khu vực cụ thể thay vì tỉnh thành, cho phép người dùng tìm kiếm trong 1 phạm vi địa lý. Điều này giúp người dùng dễ dàng lên kế hoạch, chọn các nhà hàng gần và tiện lợi nhất. Hệ thống không hỗ trợ thanh toán hay đặt chỗ giữa khách hàng và nhà hàng, nhưng có thể mở rộng trong tương lai.</p>
+        <a href="#">... Xem thêm</a>
+        
+        <div>
+            <button style="color : red">Like</button>
+            <h6>Comment:</h6>
+            <form role="form">
+              <div class="form-group">
+                <textarea class="form-control" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            <br><br>
+            
+            <p><span class="badge">2</span> Comments:</p><br>
+            
+            <div class="row">
+
+                  <div class="col-sm-2 text-center">
+                    <img src="image/a6.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                  </div>
+                  <div class="col-sm-10">
+                    <h4>Anh Tuấn <small>Sep 29, 2015, 9:12 PM</small></h4>
+                    <p>Hay lắm !!! Đmm =)))</p>
+                    <br>
+                  </div>
+
+                  <div class="col-sm-2 text-center">
+                    <img src="image/a6.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                  </div>
+                  <div class="col-sm-10">
+                    <h4>Nga Phèn <small>Sep 25, 2015, 8:25 PM</small></h4>
+                    <p>Nhảm nhí hết sức :3</p>
+                    <br>
+                  </div>
+          </div>
+         
+         </div>
+         <hr>
+      </div>
+      <a href="#">Xem thêm bài viết</a>
+ 
+    </div>
+  </div>
+</div>
+
+
+</br>
+</br>
+
+<footer class="container-fluid text-center">
+   <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">Copyright &copy; TTNT 2017</span>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/ong.caothang.121"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Nền tảng chia sẻ kiến thức cho sinh viên</title>
+    
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+    .myBody {
+        margin-top: 50px;
+    }
+     footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+</style>
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">CN WEB</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+          <li ><a href="#">Trang chủ</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Thắng con <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Trang cá nhân</a></li>
+              <li class="active"><a href="#">Viết bài</a></li>
+              <li><a href="#">Đăng xuất</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+    </ul>
+  </div>
+</nav>
+   
+    <div class="intro-header myBody">
+        <div class="container">
+
+            <div class="text-center" ng-app="upLoad" ng-controller="up-load">
+                <h1><span class="fa fa-sign-in"></span> Report</h1>
+                <hr>
+                <form action="/users/upLoad" method="post" name="">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" name="title" class="form-control" ng-model="title" placeholder="Title" />
+
+                    </div>
+                    <div class="form-group">
+                        <label>Content</label>
+                        <textarea class="form-control" name="content" ng-model="content" placeholder="Content" rows="20" cols="50"> </textarea> 
+                    </div>
+                    <button type="Submit" class="btn btn-info">Upload</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+<footer class="container-fluid text-center">
+   <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">Copyright &copy; TTNT 2017</span>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/ong.caothang.121"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+
+
+</body>
+
+</html>

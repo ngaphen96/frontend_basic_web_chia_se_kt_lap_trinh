@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+  <title>Nền tảng chia sẻ kiến thức cho sinh viên</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+     .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+      position: fixed;
+      right: 0px;
+      background: hsla(80, 90%, 40%, 0.7);/*độ nét của màu sắc, và độ mờ*/
+      
+   
+    }
+        body {
+            
+        }
+        footer {
+          background-color: #f2f2f2;
+          padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">CN WEB</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+              <li ><a href="#">Trang chủ</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Thắng con
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a href="#">Trang cá nhân</a></li>
+                  <li ><a href="#">Viết bài</a></li>
+                  <li><a href="#">Đăng xuất</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div  ng-app="postsApp" ng-controller="posts">
+             
+        <section id="">
+            <div class="container" >
+                <div class="col-md-8" >
+                    <ul class="">
+                          <!--Bai dang-->
+                            <li class="list-group-item" style="height: 100%;" ng-repeat="a in Posts">    
+                                <a style="text-decoration: none;" href="#"><h3>Bài đăng 1 của bạn </h3> </a> 
+                                 <h5><span class="glyphicon glyphicon-time"></span> Đăng bởi Thắng Con, Sep 2, 2015.</h5>
+                                 <h5><span><span>12<span class="label label-danger">Like</span></span> &nbsp; &nbsp;<span>3 <span class="label label-primary">Coment</span></span></span></h5><br> 
+                                <p>Hệ thống quản lý việc tìm kiếm, đánh giá của khách hàng (người dùng) và phản hồi của nhà hàng dưới dạng các thông báo và cập nhật thông tin. Việc tìm kiếm của hệ thống tập trung vào khu vực cụ thể thay vì tỉnh thành, cho phép người dùng tìm kiếm trong 1 phạm vi địa lý. Điều này giúp người dùng dễ dàng lên kế hoạch, chọn các nhà hàng gần và tiện lợi nhất. Hệ thống không hỗ trợ thanh toán hay đặt chỗ giữa khách hàng và nhà hàng, nhưng có thể mở rộng trong tương lai.</p>
+                                <a href="#">... Xem thêm</a> 
+                                <br/>
+                                <span>
+                                 
+                                    <button class="btn btn-danger" ">Delete</button>
+                                     <a href="#"> <button class="btn btn-info" >Edit</button></a>
+                                       
+                                </span>        
+                                
+                           </li>
+
+                            </br> </br>
+
+                            <!--Bai dang-->
+                            <li class="list-group-item" style="width: 100%;" ng-repeat="a in Posts">    
+                                <a style="text-decoration: none;" href="#">
+                                <h3>Bài đăng 2 của bạn </h3> 
+                                </a> 
+                                <h5><span class="glyphicon glyphicon-time"></span> Đăng bởi Thắng Con, Sep 22, 2015.</h5>
+                                <h5><span><span>12<span class="label label-danger">Like</span></span> &nbsp; &nbsp;<span>3 <span class="label label-primary">Coment</span></span></span></h5><br>
+                                <p>Hệ thống quản lý việc tìm kiếm, đánh giá của khách hàng (người dùng) và phản hồi của nhà hàng dưới dạng các thông báo và cập nhật thông tin. Việc tìm kiếm của hệ thống tập trung vào khu vực cụ thể thay vì tỉnh thành, cho phép người dùng tìm kiếm trong 1 phạm vi địa lý. Điều này giúp người dùng dễ dàng lên kế hoạch, chọn các nhà hàng gần và tiện lợi nhất. Hệ thống không hỗ trợ thanh toán hay đặt chỗ giữa khách hàng và nhà hàng, nhưng có thể mở rộng trong tương lai.</p>
+                                <a href="#">... Xem thêm</a>
+                                <br/>
+                                <span>
+                                  <button class="btn btn-danger" ">Delete</button>
+                                     <a href="#"> <button class="btn btn-info" >Edit</button></a>
+                                </span>           
+                                
+                                
+                           
+                            </li>
+
+
+                             </br></br>
+
+                             <!--Bai dang-->
+                            <li class="list-group-item" style="height: 100%;" ng-repeat="a in Posts">    
+                                <a style="text-decoration: none;" href="/#"><h3>Bài đăng 3 của bạn </h3> </a>
+                                <h5><span class="glyphicon glyphicon-time"></span> Đăng bởi Thắng Con, Sep 27, 2015.</h5>
+                                 <h5><span><span>12<span class="label label-danger">Like</span></span> &nbsp; &nbsp;<span>3 <span class="label label-primary">Coment</span></span></span></h5><br>
+                                <p>Hệ thống quản lý việc tìm kiếm, đánh giá của khách hàng (người dùng) và phản hồi của nhà hàng dưới dạng các thông báo và cập nhật thông tin. Việc tìm kiếm của hệ thống tập trung vào khu vực cụ thể thay vì tỉnh thành, cho phép người dùng tìm kiếm trong 1 phạm vi địa lý. Điều này giúp người dùng dễ dàng lên kế hoạch, chọn các nhà hàng gần và tiện lợi nhất. Hệ thống không hỗ trợ thanh toán hay đặt chỗ giữa khách hàng và nhà hàng, nhưng có thể mở rộng trong tương lai.</p>
+                                <a href="#">... Xem thêm</a>  
+                                <br/>
+                                <span>
+                                  <button class="btn btn-danger" ">Delete</button>
+                                  <a href="#"> <button class="btn btn-info" >Edit</button></a>
+                                </span>               
+                                
+                                
+                           
+                            </li>
+                             </br> </br>
+                    </ul>
+                </div>
+                <div class="col-md-4" style="height: 100%">
+                        <div class="col-sm-3 sidenav">
+                          <h4>Thắng Con</h4>
+                          <img src="image/a6.jpg" class="img-circle" height="300" width="300" alt="Avatar">
+                          
+                           <br/>
+                          <label><h5>Username : <span style="color:red">Thắng Con </span> </h5></label><br/>
+                          <label><h5>Address  : <span style="color:red">Hà Nội</span> </h5></label><br/>
+                          <label><h5>Job : <span style="color:red">Sinh viên</span> </h5></label><br/>
+                          <label><h5>Age : <span style="color:red">21</span> </h5></label><br/>
+                          <p>
+                            <span><strong>Số người theo dõi  : 12  &nbsp; &nbsp;</strong> </span>
+                            <span><strong>Theo dỗi  : 2 </strong></span>
+                          </p>
+                          <a href="#"> <i class="glyphicon glyphicon-cog" style="width:30px"></i><label>Cập nhật hồ sơ</label></a>
+
+                        </div>
+                
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+  <footer class="container-fluid text-center">
+   <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">Copyright &copy; TTNT 2017</span>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/ong.caothang.121"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+    
+
+</body>
+
+</html>

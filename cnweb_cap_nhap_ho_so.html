@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+  <title>Nền tảng chia sẻ kiến thức cho sinh viên</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+      
+            
+        }
+        .remove{
+            float:right;
+        }
+          footer {
+          background-color: #f2f2f2;
+          padding: 25px;
+        }
+    </style>
+
+    
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">CN WEB</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+              <li ><a href="#">Trang chủ</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Thắng con
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a href="#">Trang cá nhân</a></li>
+                  <li ><a href="#">Viết bài</a></li>
+                  <li><a href="#">Đăng xuất</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <!-- <div class="col-md-10 col-md-offset-1"> -->
+        <label><h1>Update Profile</h1></label>
+        <form action="#" method="post">
+            <div class="form-group">
+               <!--  <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" class="form-control" name="userName" placeholder='User name' value="" />
+                </div> -->
+                <div class="form-group">
+                    <label>Avatar</label>
+                    <input type="url" class="form-control" name="avatar" placeholder='Put your image link for your avatar' value="" />
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" name="city" class="form-control" placeholder="City" value="" />
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" min="0" class="form-control" name="age" placeholder='Age' value="" />
+                </div>
+                <div class="form-group">
+                    <label>Job</label>
+                    <input type="text" class="form-control" name="job" placeholder='job' value="" />
+                </div>
+
+                <div>
+                    <input type="submit" class=" form-control btn-info Update" value="Submit" />
+                </div>
+        </form>
+        <label><h1>Change Password</h1></label>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label>Current Password</label>
+                <input type="password" name="currentPassword" class="form-control" placeholder="Current Password"></input>
+            </div>
+            <div class="form-group">
+                <label>New Password</label>
+                <input type="password" name="newPassword" class="form-control" placeholder="New Password"></input>
+            </div>
+            <div>
+                <input type="submit" class=" form-control btn-info Update" value="Save Changes" />
+            </div>
+
+        </form>
+        </div>
+        </form>
+    </div>
+
+
+<footer class="container-fluid text-center">
+   <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">Copyright &copy; TTNT 2017</span>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/ong.caothang.121"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+
+
+</body>
+
+</html>
